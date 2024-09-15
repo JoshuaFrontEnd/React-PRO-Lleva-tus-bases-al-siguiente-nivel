@@ -34,7 +34,7 @@ export default tseslint.config(
       '@stylistic/eol-last' : [ 'error', 'always' ],
       '@stylistic/function-call-spacing' : [ 'error', 'never' ],
       '@stylistic/indent' : [ 'error', 2 ],
-      '@stylistic/key-spacing' : [ 'error', { 'beforeColon' : true } ],
+      '@stylistic/key-spacing' : [ 'error', { 'beforeColon' : false } ],
       '@stylistic/keyword-spacing' : [ 'error', { 'before' : true } ],
       '@stylistic/max-len' : [ 'error', { 'code' : 80 } ],
       '@stylistic/no-multi-spaces' : 'error',
