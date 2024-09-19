@@ -23,3 +23,13 @@ export interface ProductCardHOCProps {
   Image: (Props: ProductImageProps) => JSX.Element;
   Buttons: (Props: ProductButtonsProps) => JSX.Element;
 }
+
+export interface onChangeArgs {
+  product: Product;
+  count: number;
+}
+
+// Agrego una nueva propiedad a la interfaz Product sin modificar la interfaz original
+export interface ProductInCard extends Product {
+  count: number;
+}
