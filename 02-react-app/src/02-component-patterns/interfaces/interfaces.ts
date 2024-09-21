@@ -13,8 +13,9 @@ export interface Product {
 // Definiendo el tipado de las Props del Provider de ProductContext
 export interface ProductContextProps {
   counter: number;
-  increaseBy: (value: number) => void;
   product: Product;
+  maxCount?: number;
+  increaseBy: (value: number) => void;
 }
 
 export interface ProductCardHOCProps {
@@ -32,4 +33,18 @@ export interface onChangeArgs {
 // Agrego una nueva propiedad a la interfaz Product sin modificar la interfaz original
 export interface ProductInCard extends Product {
   count: number;
+}
+
+export interface InitialValues {
+  count?: number;
+  maxCount?: number;
+}
+
+export interface ProductCardHandlers {
+  count: number;
+  isMaxCountReached: boolean;
+  maxCount?: number;
+  product: Product;
+  increaseBy: (value: number) => void;
+  reset: () => void;
 }
